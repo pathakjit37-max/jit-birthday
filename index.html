@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wish JIT PATHAK 🎂</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(135deg,#16002f,#4b126e,#ff4f9a);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+/* Floating hearts */
+
+.heart{
+    position:fixed;
+    bottom:-40px;
+    font-size:25px;
+    animation:float 8s linear infinite;
+    opacity:.7;
+}
+
+.h1{left:10%;}
+.h2{left:30%;animation-delay:2s;}
+.h3{left:60%;animation-delay:4s;}
+.h4{left:85%;animation-delay:1s;}
+
+@keyframes float{
+
+    from{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.8;
+    }
+
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* Main card */
+
+.card{
+    width:100%;
+    max-width:600px;
+    text-align:center;
+    padding:40px 25px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:30px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.4);
+}
+
+/* Heading */
+
+.small{
+    font-size:16px;
+    color:#ffd6ed;
+    letter-spacing:2px;
+}
+
+h1{
+    font-size:48px;
+    margin:10px 0;
+}
+
+.name{
+    font-size:36px;
+
+    background:linear-gradient(
+        90deg,
+        #fff,
+        #ffd1e8,
+        #fff
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.cake{
+    font-size:80px;
+    margin:20px;
+}
+
+.subtitle{
+    font-size:18px;
+    line-height:1.6;
+    color:#f5e9f1;
+    margin-bottom:30px;
+}
+
+/* Form */
+
+form{
+    text-align:left;
+}
+
+label{
+    display:block;
+    margin:15px 0 7px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.9);
+
+    color:#333;
+
+    font-size:16px;
+}
+
+textarea{
+    height:130px;
+    resize:none;
+}
+
+input:focus,
+textarea:focus{
+    box-shadow:0 0 0 3px rgba(255,255,255,.3);
+}
+
+/* Button */
+
+button{
+    width:100%;
+    margin-top:22px;
+
+    padding:16px;
+
+    border:none;
+    border-radius:50px;
+
+    background:white;
+
+    color:#8a0751;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 12px 30px rgba(255,255,255,.3);
+}
+
+/* Footer */
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#ead6e3;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- Floating hearts -->
+
+<div class="heart h1">💖</div>
+<div class="heart h2">💕</div>
+<div class="heart h3">💜</div>
+<div class="heart h4">💗</div>
+
+
+<div class="card">
+
+    <div class="small">
+        AUGUST 31 • A SPECIAL DAY
+    </div>
+
+    <h1>
+        🎂 Happy Birthday
+    </h1>
+
+    <div class="name">
+        JIT PATHAK
+    </div>
+
+    <div class="cake">
+        🎂
+    </div>
+
+    <p class="subtitle">
+
+        It's my birthday! 🥳
+        <br>
+        Your wishes would make my day even more special. ❤️
+
+    </p>
+
+
+    <!-- WISH FORM -->
+
+    <!--
+    IMPORTANT:
+    Replace YOUR_EMAIL@gmail.com
+    with your real email address.
+    -->
+
+    <form
+    action="https://formsubmit.co/jitpathak20@gmail.com"
+    method="POST"
+    >
+
+        <label>
+            Your Name
+        </label>
+
+        <input
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        required
+        >
+
+
+        <label>
+            Your Birthday Wish 💌
+        </label>
+
+        <textarea
+        name="message"
+        placeholder="Write something nice for JIT... ❤️"
+        required
+        ></textarea>
+
+
+        <!-- Form settings -->
+
+        <input
+        type="hidden"
+        name="_subject"
+        value="🎂 New Birthday Wish for JIT PATHAK"
+        >
+
+        <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+        >
+
+
+        <button type="submit">
+            💌 Send Birthday Wish
+        </button>
+
+    </form>
+
+
+    <div class="footer">
+
+        Made with ❤️ for JIT PATHAK
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
